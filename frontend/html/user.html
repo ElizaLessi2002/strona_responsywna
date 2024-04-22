@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<!--
+    Aby uruchomic strone na localhost wystarczy odpalic xamppa i modul apache,
+    wlozyc pliki do folderu xampp/htdocs
+    oraz odpalic przegladarke na strone http://localhost:7999
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Strona responsywna</title>
+    <meta name="description" content="Strona na potrzeby uczelnii" />
+    <meta name="keywords" content="pictures, user, table, improvements for the disabled" />
+    <meta name="author" content="Eliza Lesiewicz" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <link rel="stylesheet" href="http://localhost/strona_responsywna/backend/php/index.php" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #f8f9fa;
+        }
+
+    </style>
+
+</head>
+
+<!--
+    ulatwienia dla niepelnosprawnych:
+    1. dodawanie opisu do obrazkow poprzez alt
+    2. tabindex - mozliwosc poruszania sie po stronie za pomoca tabulatora
+-->
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#" tabindex="1">
+                            <img src="http://localhost/strona_responsywna/frontend/image/1.png" width="40" height="40" class="img-fluid" alt="Zdjecie drzewa"> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://localhost/strona_responsywna/frontend/html/index.html" tabindex="2">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/strona_responsywna/frontend/html/user.html" tabindex="3">User</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/strona_responsywna/frontend/html/picture.html" tabindex="4">Picture</a>
+                    </li>
+                </ul>
+                        
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="container-fluid bg-light text-center p-5">
+            <table class=" table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" tabindex="5">Number</th>
+                        <th scope="col" tabindex="6">First name</th>
+                        <th scope="col" tabindex="7">Last name</th>
+                        <th scope="col" tabindex="8">University</th>
+                        <th scope="col" tabindex="9">Index number</th>
+                        <th scope="col" tabindex="10">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" tabindex="11">1</th>
+                        <td tabindex="12">Alicja</td>
+                        <td tabindex="13">Kowalska</td>
+                        <td tabindex="14">Politechnika Wrocławska</td>
+                        <td tabindex="15">302340</td>
+                        <td tabindex="16">alicja.kowalska@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="17">2</th>
+                        <td tabindex="18">Kamil</td>
+                        <td tabindex="19">Krawczyk</td>
+                        <td tabindex="20">Uniwersytet Łódzki</td>
+                        <td tabindex="21">459833</td>
+                        <td tabindex="22">k.krawczyk@wp.pl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="23">3</th>
+                        <td tabindex="24">Emilia</td>
+                        <td tabindex="25">Grabarczyk</td>
+                        <td tabindex="26">Uniwersytet Warszawski</td>
+                        <td tabindex="27">807890</td>
+                        <td tabindex="28">emi.grabarczyk@onet.pl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="29">4</th>
+                        <td tabindex="30">Karolina</td>
+                        <td tabindex="31">Wilk</td>
+                        <td tabindex="32">Uniwersytet SWPS</td>
+                        <td tabindex="33">677120</td>
+                        <td tabindex="34">karolina.wilk@wp.pl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="35">5</th>
+                        <td tabindex="36">Filip</td>
+                        <td tabindex="37">Niewiadomski</td>
+                        <td tabindex="38">Politechnika Gdańska</td>
+                        <td tabindex="39">738845</td>
+                        <td tabindex="40">filip.niewiadomski@wp.pl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="41">6</th>
+                        <td tabindex="42">Hubert</td>
+                        <td tabindex="43">Adamczak</td>
+                        <td tabindex="44">Uniwersytet Opolski</td>
+                        <td tabindex="45">156377</td>
+                        <td tabindex="46">hubert.adamczyk@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="47">7</th>
+                        <td tabindex="48">Arkadiusz</td>
+                        <td tabindex="49">Żurowicz</td>
+                        <td tabindex="50">Politechnika Lubelska</td>
+                        <td tabindex="51">240012</td>
+                        <td tabindex="52">arkadiusz.zurowicz@onet.pl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="53">8</th>
+                        <td tabindex="54">Krystyna</td>
+                        <td tabindex="55">Dowbor</td>
+                        <td tabindex="56">Politechnika Śląska</td>
+                        <td tabindex="57">570105</td>
+                        <td tabindex="58">krystyna.dowbor@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="59">9</th>
+                        <td tabindex="60">Bogumiła</td>
+                        <td tabindex="61">Raczkowska</td>
+                        <td tabindex="62">Uniwersytet Jagielloński</td>
+                        <td tabindex="63">900155</td>
+                        <td tabindex="64">bogumila.raczkowska@wp.pl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" tabindex="65">10</th>
+                        <td tabindex="66">Miłosz</td>
+                        <td tabindex="67">Albiński</td>
+                        <td tabindex="68">Uniwersytet Jagielloński</td>
+                        <td tabindex="69">980076</td>
+                        <td tabindex="70">milosz.albinski@onet.pl</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-light" tabindex="71">
+            <h6 class="display-6 text-center">EL <br/> 2024</h6>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
